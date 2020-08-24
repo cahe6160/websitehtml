@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+ h2{
+    font-family:'Montserrat', sans-serif;
+    color: #a6b1e1;
+
+  }
+/* home page for website */
+/* General link styles */
+.link {
+   outline: none;
+   text-decoration: none;
+   position: relative;
+   font-size: 8em;
+   line-height: 1;
+   color: #9e9ba4;
+   display: inline-block;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+h6{
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Manko */
+.link--manko {
+   color: #B1C0B2; /* name before hover */
+   font-family: 'Playfair Display', serif;
+   font-weight: 900;
+   font-style: italic;
+   padding: 0.65em 0 0.8em;
+   -webkit-transition: color 0.5s;
+   transition: color 0.5s;
+}
+
+.link--manko:hover {
+   color: #a6b1e1
+; /* after hover for care */
+}
+
+.link--manko::before,
+.link--manko::after {
+   content: '';
+   position: absolute;
+   border-width: 4px 0;
+   border-style: solid;
+   border-color: #fff;
+   pointer-events: none;
+   -webkit-transform: scale3d(0,1,1);
+   transform: scale3d(0,1,1);
+   -webkit-transition: -webkit-transform 0.4s;
+   transition: transform 0.4s;
+   -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+   transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.link--manko::before {
+   width: 50%;
+   left: 25%;
+   height: 80%;
+   top: 10%;
+}
+
+.link--manko::after {
+   width: 30%;
+   left: 35%;
+   height: 100%;
+   top: 0;
+}
+
+.link--manko:hover::before,
+.link--manko:hover::after {
+   -webkit-transform: scale3d(1,1,1);
+   transform: scale3d(1,1,1);
+}
+
+.link--manko span {
+   color: #85C1E9; /* for just enjoy where you are now*/
+   font-weight: 400;
+   position: absolute;
+   font-size: 0.2em;
+   left: 0;
+   width: 100%;
+   opacity: 0;
+   pointer-events: none;
+   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+   transition: opacity 0.5s, transform 0.5s;
+}
+
+.link--manko span:first-of-type {
+   bottom: 100%;
+   margin-bottom: 15px;
+   -webkit-transform: scale3d(0.8,0.8,1) translate3d(0,10px,0);
+   transform: scale3d(0.8,0.8,1) translate3d(0,10px,0);
+}
+
+.link--manko span:last-of-type {
+   top: 100%;
+   margin-top: 10px;
+   -webkit-transform: scale3d(0.8,0.8,1) translate3d(0,-10px,0);
+   transform: scale3d(0.8,0.8,1) translate3d(0,-10px,0);
+}
+
+.link--manko:hover span {
+   opacity: 1;
+   -webkit-transform: translate3d(0,0,0);
+   transform: translate3d(0,0,0);
+}
+
+.link--manko:hover span:first-of-type {
+   -webkit-transition-delay: 0.15s;
+   transition-delay: 0.15s;
+}
+
+.link--manko:hover span:last-of-type {
+   -webkit-transition-delay: 0.20s;
+   transition-delay: 0.20s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 50em) {
+   .link--surinami { font-size: 3em; }
+}
+
+@media screen and (max-width: 42em) {
+   .link--takiri { font-size: 3.5em; }
+   .link--kukuri { font-size: 3.5em; }
+   .link--nukun { font-size: 3.5em; }
+   .link--kumya { font-size: 3em; }
+   .link--manko { font-size: 3.5em; }
+   .link--urpi { font-size: 5em; }
+   .link--mallki { font-size: 3.5em; }
+   .link--ilin { font-size: 5em; }
+   .link--asiri { -webkit-transform: scale3d(0.65,0.65,1); transform: scale3d(0.65,0.65,1); }
+   .link--yaku { font-size: 4em; }
+}
+
+
