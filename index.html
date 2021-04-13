@@ -1,32 +1,412 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Inspiration for Text Styles and Hover Effects</title>
-	<meta name="description" content="A set of modern text styles and hover effects for your inspiration" />
-	<meta name="keywords" content="text style, link style, link hover, effect, animation, inspiration, web design" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="normalize.css" />
-	<link rel="stylesheet" type="text/css" href="demo.css" />
-	<link rel="stylesheet" type="text/css" href="mycss.css" />
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Care's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mycss.css" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
 
+    h1{
+       font-size: 80px;
+    }
+    h5{
+      font-family: 'Fira Code', monospace;
+      color: #a6b1e1;
+    }
+
+    h3{
+
+      font-family: 'Fira Code', monospace;
+      color: #85C1E9;
+
+    }
+    h6{
+      font-family: font-family: 'Anton', sans-serif;;
+      color: pink;
+    }
+    h4{
+    font-family: 'didot';
+      color: #265077;
+
+    }
+
+    p{
+      font-family: "didot";
+      color: #265077;
+    }
+
+  .bg-1 { 
+    background-color: white;
+    color: #666666;
+  }
+  .bg-2 { 
+    background-color: white;
+    color: #666666;
+  }
+  .bg-3 { 
+    background-color: white;
+    color: #555555;
+  }
+  .bg-4 { /* for nav bar color */
+    background-color: #dff6f0;
+    color: #555555;
+  }
+  .container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.example_c {
+color: #a6b1e1 !important;
+text-decoration: none;
+background: #ffffff;
+padding: 15px;
+border: 2px solid #a6b1e1 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+
+.example_c:hover {
+color: #ffffff !important;
+background: #a6b1e1;
+border-color: #a6b1e1 !important;
+transition: all 0.4s ease 0s;
+}
+
+.example_sm {
+color: #a6b1e1 !important;
+text-decoration: none;
+background: #ffffff;
+padding: 10px;
+border: 2px solid #a6b1e1 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+
+.example_sm:hover {
+color: #ffffff !important;
+background: #a6b1e1;
+border-color: #a6b1e1 !important;
+transition: all 0.4s ease 0s;
+}
+
+.header .navbar-default {
+  background-color:transparent !important;
+  border-color:transparent;
+  background-image:none;
+  box-shadow:none;  
+}
+.header .navbar-default .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    color: #85C1E9;
+    border-bottom: 1px solid transparent
+}
+
+.header .navbar-default .navbar-nav>li>a {
+   font-size:20px; 
+   color: #a6b1e1; 
+    border-bottom: 1px solid transparent
+}
+.header .navbar-default .navbar-nav>li:hover a{
+    color: #c6f3b7;
+     border-bottom: 1px solid #FFF
+}
+
+
+.header .navbar-toggle {
+      margin:10px 0; 
+      background:#36C; 
+      color:#FFF;
+}
+.topnav-right {
+  float: right;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #a6cdef;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+p{
+  font-size: 18px;
+}
+
+  </style>
 </head>
-
 <body>
-	
-		<div class="grid">
 
-			<div class="grid__item color-8">
-				<a class="link link--manko" href="home.html"> Care <span>just enjoy</span> <span>where you are now</span></a>
-			</div>
-		</div>
+       <section class="header">
+            <div class="overlay">
+                <div class="row">
+                   <div class="navbar navbar-default">
+                      <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                            <div class="navlogo col-lg-2">
+                                <a class="navbar-brand" href="index.html">Welcome</a>
+                            </div>
+                          
+                        </div>
 
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                          
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <div class="col-lg-10">
+                                      <ul class="nav navbar-nav nav-links topnav-right">
+                                         <li><a href="sayhi.html">Say Hi :)</a></li>
+                                        <li><a href="classes.html">Classes I've taken</a></li>
+                                        <li><a href="comingsoon.html">Coming Soon</a></li>
+                                        <li><div class="button_cont" ><a href="myresume.pdf" class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">Resume</a></div></li>
+                                      </ul>
+                                    </div>
+                              
+                            </div>
+                         
+
+                      </div>
+                 </div>
+                
+                
+                </div>
+        
+                
+                
+                
+                
+            </div>
+        </section>
+
+<div class="container-fluid bg-1">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-10">
+    
+      <h3 style="color: #85C1E9"> Hey, my name is</h3>
+      <h2  style=" color: #c6f3b7; font-size: 65px;"> Caroline Hernandez.</h2>
+      <h2 style="font-size: 60px"> Aspiring software developer.</h2>
+
+      <br>
+      <br>
+
+      <div class="col-sm-6">
+          <h3 style="font-size: 20px; color: #265077;"> I'm a 3rd year computer science student at the University of Colorado Boulder minoring in Math!  </h3>
+          <br>
+          <br>
+          <br>
+          <div class="button_cont" ><a href="mailto:caroline.hernandez@colorado.edu" class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">Get In Touch</a></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container-fluid bg-1 text-center">
+
+
+  
+  <br>
+
+
+</div>
+
+<div class="container-fluid bg-2 text-center">
+
+    <h2 style=" color: #c6f3b7;">   ━━━  About Me  ━━━ </h2>
+    <br>
+<div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-3">
+      <!-- <img src="cujob.png" class="img-responsive" style="width:100%" alt="Image"> -->
+      <!-- <h4> school </h4> -->
+
+  
+          <br>
+            <h3>Expected graduation date</h3> <p>May 2022 </p>
+            <h3> GPA</h3> <p> 3.3 </p>
+
+            <h3>School Activities</h3> 
+             <p>​CU WIC board member | I advocate for the involvement of women in STEM fields as the volunteer director. |</p>
+            <p>Data Structures Course Assistant | I've always been so thankful for all the time and help I've received from TA's and CA's in office hours. So I became a CA to give back that help in subjects I enjoy. |</p>
+
+          <div class="button_cont" align="center"><a class="example_c" href="classes.html" target="_blank" rel="nofollow noopener">Classes I've Taken</a></div>
+  
+
+      
+    </div>
+<div class ="row">
+  <br>
+  <br>
+  <img src="care3_2.jpg" class="img-responsive " style="display:inline" alt="Bird" width="350" height="350"> 
+</div>
+<br>
+    <h3 style="color:pink;"> ♡ My Favorite Projects ♡ </h3>
+    <br>
+    <br>
+    <br>
+
+    <div class="col-sm-3">
+    </div>
+
+    <div class="col-sm-3"> 
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="happyHabits.jpg" alt="Avatar" style="width:300px;height:200px;">
+            </div>
+            <div class="flip-card-back">
+              <h2  style=" color: #c6f3b7; font-size: 20px;">Webapp group project</h2>
+              <p style="font-size: 15px">Habit tracking web app that links to users google calendar so they have easy access to the habits they're trying to keep!</p>
+              <div class="button_cont" align="center"><a class="example_sm" href="https://github.com/cahe6160/Happy-Habits-" target="_blank" rel="nofollow noopener">see code on github</a></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3"> 
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="aspirations.png" alt="Avatar" style="width:300px;height:200px;">
+            </div>
+            <div class="flip-card-back">
+              <h2  style=" color: #c6f3b7; font-size: 20px;"> This Personal Website </h2>
+              <p style="font-size: 15px"> I really enjoyed making this by myself, because I got a lot of front-end experience.</p>
+              <div class="button_cont" align="center"><a class="example_sm" href="https://github.com/cahe6160/Personal_Website" target="_blank" rel="nofollow noopener">see code on github</a></div>
+            </div>
+          </div>
+        </div>
+
+<!--       <img src="birds3.jpg" class="img-responsive" style="width:100%" alt="Image">
+ --></div>
+ <br>
+
+
+  </div>
+
+  
+<!--   <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a> -->
+</div>
+
+<div class="container-fluid bg-3 ">    
+<center><h2 h2 style=" color: #c6f3b7"> ━━━  Where I've Worked  ━━━ </h2></center>
+  <br>
+    <div class="row">
+
+    <div class="col-sm-2">
+    </div>
+
+    <div class="col-sm-3">
+        <br>
+        <img src="cuboulder.gif" class="img-responsive" style="display:inline" alt="Bird" width="400" height="400">
+
+        <!-- <img src="../resources/img/cu.jpg" class="img-responsive img-circle" style="display:inline" alt="Bird" width="250" height="250"> -->
+    </div>
+    <div class="col-sm-5">      
+      <h3> Course Assistant - Data Structures👩🏼‍💻</h3>
+  <h5> UCB  ~ Since August 2019 ~ </h5>
+  <h5> Boulder, CO </h5>
+  <br>
+  <p> Lectured students on data abstractions and their representation techniques in C++</p>
+
+ <p>Aided students in their understanding of concepts used in algorithm design and analysis including criteria for selecting data structures to fit their applications.</p>
+
+ <p>Prepared students for upcoming exams through individual help hours, study sessions and help on assignments and projects.</p>
+
+ <p>Helped in class and during office hours on various methods and strategies to implement in their coding technique and approaches to debugging. </p>
+ 
+    </div>
+  </div>
+      <br>
+
+      <div class="row">
+
+    <div class="col-sm-2">
+    </div>
+
+    <div class="col-sm-3">
+      <br>
+        <img src="sbux.gif" class="img-responsive" style="display:inline" alt="sbuxgif" width="400" height="400">
+    </div>
+    <div class="col-sm-5">
+      
+      <h3> Shift Supervisor & Trainer ☕️ </h3>
+  <h5> Starbucks Corp  ~ Oct 2014 - Jun 2020 ~</h5>
+  <h5> Boulder, CO </h5>
+  <br>
+<p>
+  Fostered a positive learning environment by providing clear, specific, timely and respectful coaching and feedback to partners to ensure operational excellence and improve performance. 
+</p>
+  <p> 
+    Anticipated customer and store needs by consistently assessing atmosphere and mood while executing Starbucks policies and procedures including cash handling, safety security, food and beverage production, and retail product management. 
+  </p>
+  <p>
+  Assisted with new partner training by reinforcing successful performance and giving respectful and encouraging coaching as needed. </p>
+
+
+        <p>Awarded Partner of the Quarter Award (Q2 2015 & Q2 2019)  </p>
+    </div>
+  </div>
+
+
+</div>
 
 </body>
-
 </html>
-
